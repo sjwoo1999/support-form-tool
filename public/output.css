@@ -20,8 +20,8 @@
 .sticky {
   position: sticky;
 }
-.z-1 {
-  z-index: 1;
+.z-0 {
+  z-index: 0;
 }
 .\!container {
   width: 100% !important;
@@ -103,14 +103,8 @@
 .text-center {
   text-align: center;
 }
-.font-\[\"Noto_Sans_KR\"\] {
-  font-family: "Noto Sans KR";
-}
 .font-\[\'Noto_Sans_KR\'\] {
   font-family: 'Noto Sans KR';
-}
-.font-\[\\\"Noto_Sans_KR\\\"\] {
-  font-family: \"Noto Sans KR\";
 }
 .capitalize {
   text-transform: capitalize;
@@ -162,6 +156,12 @@
 .duration-300 {
   --tw-duration: 300ms;
   transition-duration: 300ms;
+}
+.\[d\:l�\1a r��\] {
+  d: l�r��;
+}
+.\[n\:�N1b����ːL\8 �Ae��\3 G�\] {
+  n: �N1b����ːL�Ae��G�;
 }
 .\[xlink\:href\] {
   xlink: href;
