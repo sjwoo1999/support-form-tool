@@ -5,6 +5,17 @@
 .visible {
   visibility: visible;
 }
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
 .absolute {
   position: absolute;
 }
@@ -20,11 +31,17 @@
 .sticky {
   position: sticky;
 }
+.left-1\/2 {
+  left: calc(1/2 * 100%);
+}
 .z-0 {
   z-index: 0;
 }
 .z-6 {
   z-index: 6;
+}
+.z-10 {
+  z-index: 10;
 }
 .\!container {
   width: 100% !important;
@@ -34,6 +51,9 @@
 }
 .m-\[\10 \6 �\] {
   margin: �;
+}
+.mx-auto {
+  margin-inline: auto;
 }
 .block {
   display: block;
@@ -77,6 +97,10 @@
 .border-collapse {
   border-collapse: collapse;
 }
+.-translate-x-1\/2 {
+  --tw-translate-x: calc(calc(1/2 * 100%) * -1);
+  translate: var(--tw-translate-x) var(--tw-translate-y);
+}
 .transform {
   transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
 }
@@ -99,6 +123,27 @@
   border-style: var(--tw-border-style);
   border-width: 1px;
 }
+.border-r-8 {
+  border-right-style: var(--tw-border-style);
+  border-right-width: 8px;
+}
+.border-b-8 {
+  border-bottom-style: var(--tw-border-style);
+  border-bottom-width: 8px;
+}
+.border-l-8 {
+  border-left-style: var(--tw-border-style);
+  border-left-width: 8px;
+}
+.border-\[\#790030\] {
+  border-color: #790030;
+}
+.border-r-transparent {
+  border-right-color: transparent;
+}
+.border-l-transparent {
+  border-left-color: transparent;
+}
 .bg-gradient-to-b {
   --tw-gradient-position: to bottom in oklab;
   background-image: linear-gradient(var(--tw-gradient-stops));
@@ -106,8 +151,14 @@
 .text-center {
   text-align: center;
 }
+.text-right {
+  text-align: right;
+}
 .font-\[\'Noto_Sans_KR\'\] {
   font-family: 'Noto Sans KR';
+}
+.text-\[\#790030\] {
+  color: #790030;
 }
 .capitalize {
   text-transform: capitalize;
@@ -175,11 +226,31 @@
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
   }
 }
+.focus\:ring-\[\#790030\] {
+  &:focus {
+    --tw-ring-color: #790030;
+  }
+}
 .focus\:outline-none {
   &:focus {
     --tw-outline-style: none;
     outline-style: none;
   }
+}
+@property --tw-translate-x {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
+@property --tw-translate-y {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
+@property --tw-translate-z {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
 }
 @property --tw-rotate-x {
   syntax: "*";
