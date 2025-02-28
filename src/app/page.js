@@ -1,5 +1,4 @@
 import QuestionSection from '../components/QuestionSection';
-import './globals.css'; // 경로가 맞는지 확인
 
 export default function Home() {
   const questions = [
@@ -10,14 +9,10 @@ export default function Home() {
   ];
 
   return (
-    <div className="min-h-screen flex items-center justify-center">
-      <div className="max-w-4xl w-full mx-4 my-12 p-8 bg-white rounded-xl shadow-2xl">
-        <h1 className="text-4xl font-bold text-ku-crimson mb-8 text-center tracking-tight">
-          KUCC 지원서 작성 도구
-        </h1>
-        <p className="mb-10 text-gray-700 text-center font-medium">
-          아래 질문에 답변을 작성하며, 실시간으로 글자 수를 확인하세요.
-        </p>
+    <div className="container">
+      <div className="form-card">
+        <h1 className="title">KUCC 지원서 작성 도구</h1>
+        <p className="description">아래 질문에 답변을 작성하며, 실시간으로 글자 수를 확인하세요.</p>
         <div className="space-y-8">
           {questions.map((q, index) => (
             <QuestionSection key={index} question={q.text} charLimit={q.limit} />
