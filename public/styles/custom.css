@@ -1,0 +1,133 @@
+/* src/styles/custom.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    height: 100%;
+    font-family: 'Noto Sans KR', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background: linear-gradient(to bottom, #790030, #f3f4f6);
+    overflow: auto;
+  }
+  
+  .antialiased {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .form-card {
+    max-width: 896px;
+    width: 100%;
+    margin: 3rem 1rem;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 0.75rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  }
+  
+  .title {
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: #790030;
+    margin-bottom: 2rem;
+    text-align: center;
+    letter-spacing: -0.025em;
+  }
+  
+  .description {
+    margin-bottom: 2.5rem;
+    color: #4b5563;
+    text-align: center;
+    font-weight: 500;
+  }
+  
+  .question-section {
+    padding: 1.5rem;
+    background-color: white;
+    border-radius: 0.5rem;
+    border: 1px solid rgba(121, 0, 48, 0.2);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  }
+  
+  .question-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #790030;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+  }
+  
+  .question-number {
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: #790030;
+    color: white;
+    border-radius: 9999px;
+    text-align: center;
+    margin-right: 0.5rem;
+  }
+  
+  .textarea-container {
+    position: relative;
+  }
+  
+  .textarea {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid #d1d5db;
+    border-radius: 0.375rem;
+    resize: vertical;
+    outline: none;
+    transition: all 0.3s ease;
+  }
+  
+  .textarea:focus {
+    border-color: #790030;
+    box-shadow: 0 0 0 2px rgba(121, 0, 48, 0.5);
+  }
+  
+  .char-count {
+    position: absolute;
+    bottom: 0.5rem;
+    right: 0.5rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #790030;
+  }
+  
+  .char-count.exceeded {
+    color: #dc2626;
+  }
+  
+  .char-limit-warning {
+    margin-left: 0.5rem;
+    color: #dc2626;
+  }
+  
+  .save-button {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #790030;
+    color: white;
+    border-radius: 0.375rem;
+    transition: background-color 0.2s ease;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .save-button:hover {
+    background-color: rgba(121, 0, 48, 0.8);
+  }

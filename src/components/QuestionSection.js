@@ -1,3 +1,4 @@
+// src/components/QuestionSection.js
 'use client';
 
 import { useState } from 'react';
@@ -30,7 +31,7 @@ export default function QuestionSection({ question, charLimit }) {
           rows={6}
           placeholder="여기에 답변을 작성하세요."
         />
-        <div className="absolute bottom-2 right-2 text-sm font-medium">
+        <div className="char-count">
           <span className={isOverLimit ? 'char-count exceeded' : 'char-count'}>
             글자 수: {charCount} / {charLimit}
           </span>
@@ -39,10 +40,7 @@ export default function QuestionSection({ question, charLimit }) {
           )}
         </div>
       </div>
-      <button
-        onClick={handleSave}
-        className="save-button"
-      >
+      <button onClick={handleSave} className="save-button">
         저장
       </button>
     </div>

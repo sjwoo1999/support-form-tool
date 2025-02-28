@@ -1,3 +1,4 @@
+// src/app/page.js
 import QuestionSection from '../components/QuestionSection';
 
 export default function Home() {
