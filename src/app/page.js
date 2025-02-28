@@ -14,11 +14,9 @@ export default function Home() {
       <div className="form-card">
         <h1 className="title">KUCC 지원서 작성 도구</h1>
         <p className="description">아래 질문에 답변을 작성하며, 실시간으로 글자 수를 확인하세요.</p>
-        <div className="space-y-8">
-          {questions.map((q, index) => (
-            <QuestionSection key={index} question={q.text} charLimit={q.limit} />
-          ))}
-        </div>
+        {questions.map((q, index) => (
+          <QuestionSection key={index} question={q.text} charLimit={q.limit} />
+        ))}
       </div>
     </div>
   );

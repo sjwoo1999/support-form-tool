@@ -19,26 +19,16 @@ export default function QuestionSection({ question, charLimit }) {
 
   return (
     <div className="question-section">
-      <h2 className="question-title">
-        <span className="question-number">{question.match(/\[(\d+번 문항)\]/)[1].charAt(0)}</span>
-        {question}
-      </h2>
-      <div className="textarea-container">
-        <textarea
-          value={answer}
-          onChange={handleChange}
-          className="textarea"
-          rows={6}
-          placeholder="여기에 답변을 작성하세요."
-        />
-        <div className="char-count">
-          <span className={isOverLimit ? 'char-count exceeded' : 'char-count'}>
-            글자 수: {charCount} / {charLimit}
-          </span>
-          {isOverLimit && (
-            <span className="char-limit-warning">글자 수 제한을 초과했습니다!</span>
-          )}
-        </div>
+      <h2 className="question-title">{question}</h2>
+      <textarea
+        value={answer}
+        onChange={handleChange}
+        className="textarea"
+        rows={6}
+        placeholder="여기에 답변을 작성하세요."
+      />
+      <div className={isOverLimit ? 'char-count exceeded' : 'char-count'}>
+        글자 수: {charCount} / {charLimit}
       </div>
       <button onClick={handleSave} className="save-button">
         저장
