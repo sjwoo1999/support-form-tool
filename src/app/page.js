@@ -1,4 +1,5 @@
 import QuestionSection from '../components/QuestionSection';
+import './globals.css'; // 경로가 맞는지 확인
 
 export default function Home() {
   const questions = [
